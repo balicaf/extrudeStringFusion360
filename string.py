@@ -35,7 +35,7 @@ def run(context):
                     #skText.height = 2
                     skText.text = returnValue[i-(FlowerNb5*10+14)]
                     #skText.fontName = 'Courier'            
-                    
+                    #continue
                     #if it's a blank char, do nothing
                     if returnValue[i-(FlowerNb5*10+14)] == " ":
                         continue    # continue here
@@ -85,11 +85,16 @@ def run(context):
         (returnValue1, cancelled) = ui.inputBox('idk', 'idk2', )
         (returnValue2, cancelled) = ui.inputBox('idk', 'idk2', )
         (returnValue3, cancelled) = ui.inputBox('idk', 'idk2', )
-
+        (returnValue4, cancelled) = ui.inputBox('idk', 'idk2', )
+        (returnValue5, cancelled) = ui.inputBox('idk', 'idk2', )
+        (returnValue6, cancelled) = ui.inputBox('idk', 'idk2', )
 
         extrudeFloxer(returnValue1, 1)
         extrudeFloxer(returnValue2, 2)
         extrudeFloxer(returnValue3, 3)
+        extrudeFloxer(returnValue4, 4)
+        extrudeFloxer(returnValue5, 5)
+        extrudeFloxer(returnValue6, 6)
     except:
         if ui:
             ui.messageBox('Failed:\n{}'.format(traceback.format_exc()))
